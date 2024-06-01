@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import AppointmentService from '../service/AppointmentService';
 
 class DoctorDetailsForPatient extends Component {

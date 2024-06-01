@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import AppointmentService from '../service/AppointmentService';
-import { NavLink } from "react-router-dom";
-import { Button } from 'bootstrap';
 
 class ShowAppointmentSlots extends Component {
     constructor(props) {
@@ -30,18 +28,10 @@ class ShowAppointmentSlots extends Component {
                     message: "Slots retrieved successfully"
                 })
             })
-            // .catch(error => {
-            //     console.error("in err ", error.response.data);
-
-            //     alert(error.response.data.message);
-            // });
 
     }
 
-
     render() {
-        let doctor = JSON.parse(sessionStorage.getItem("doctor"));
-
         return (
             <>
                 <div className="container">

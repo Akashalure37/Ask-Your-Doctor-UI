@@ -108,7 +108,7 @@ class UpdateDoctorProfile extends Component {
                         <div className="form-group row my-3 justify-content-center">
                             <label htmlFor="username" className="col-2 col-form-label">Username</label>
                             <div className="col-5">
-                                <input type="text" id="username" className="form-control" name="username" readOnly={true} defaultValue={this.state.username} onChange={this.onChange} readOnly={true}/>
+                                <input type="text" id="username" className="form-control" name="username" defaultValue={this.state.username} onChange={this.onChange} readOnly={true}/>
                             </div>
                         </div>
                         <div className="form-group row my-3 justify-content-center">

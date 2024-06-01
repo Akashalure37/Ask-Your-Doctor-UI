@@ -33,7 +33,7 @@ class AdminDashboard extends Component {
 
     render() {
 
-        let { adminId, firstName } = this.state;
+        let {firstName} = this.state;
         return (
             <>
                 <div className="container">

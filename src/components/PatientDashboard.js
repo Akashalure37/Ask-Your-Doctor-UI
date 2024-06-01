@@ -34,7 +34,7 @@ class PatientDashboard extends Component {
     logoutPatient = () => PatientServiceMethods.logoutPatient();
 
     render() {
-        let { patientId, firstName } = this.state;
+        let {firstName} = this.state;
 
         return (
             <>

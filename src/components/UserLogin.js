@@ -18,7 +18,7 @@ class UserLogin extends Component {
     }
 
     login = e => {
-        if(this.state.password == '') {
+        if(this.state.password === '') {
             alert("Password cannot be null")
             this.props.history.push("/userLogin")
             return false;
@@ -60,7 +60,7 @@ class UserLogin extends Component {
     validateEmail() {
         let email = document.getElementById("email").value;
         let emailRegex = /\S+@\S+\.\S+/;
-        if(emailRegex.test(email) === true || email == '') {
+        if(emailRegex.test(email) === true || email === '') {
             return true;
         }
         else {

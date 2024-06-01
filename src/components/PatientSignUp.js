@@ -139,7 +139,7 @@ class PatientSignUp extends Component {
                         <div className="form-group row my-3 justify-content-center">
                             <label htmlFor="email" className="col-2 col-form-label">Email</label>
                             <div className="col-5">
-                                <input type="email" id="email" className="form-control" placeholder="e.g. abc@xyz.com" name="email" value={this.state.email} onChange={this.onChange} onChange={this.onChange} required onFocus={this.removeWarnings} onBlur={this.validateEmail} /><span style={{ color: 'red' }} id='emailVr'></span>
+                                <input type="email" id="email" className="form-control" placeholder="e.g. abc@xyz.com" name="email" value={this.state.email} onChange={this.onChange} required onFocus={this.removeWarnings} onBlur={this.validateEmail} /><span style={{ color: 'red' }} id='emailVr'></span>
 
                             </div>
                         </div>

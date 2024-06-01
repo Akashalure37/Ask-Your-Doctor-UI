@@ -42,12 +42,12 @@ class CreateAppointmentSlots extends Component {
         var str1 =  (this.state.startTime).split(':');
         var str2 = (this.state.endTime).split(':');
 
-        console.log(startDate.getTime() == date.getTime())
+        console.log(startDate.getTime() === date.getTime())
        
-        if(startDate.getDate() == date.getDate() && endDate.getDate() == date.getDate() && parseInt(str1[0]) < date.getHours()){
+        if(startDate.getDate() === date.getDate() && endDate.getDate() === date.getDate() && parseInt(str1[0]) < date.getHours()){
             alert("Time is not valid");
         }
-        else if (startDate.getDate() != date.getDate() && endDate.getDate() != date.getDate() && startDate < date || endDate < startDate) {
+        else if ((startDate.getDate() !== date.getDate() && endDate.getDate() !== date.getDate()) && (startDate < date || endDate < startDate)) {
             alert("Date is not valid");
         } 
         else if(parseInt(str1[0]) > parseInt(str2[0])){
@@ -95,6 +95,7 @@ class CreateAppointmentSlots extends Component {
                 case "6":
                     this.setState({holidays: [...this.state.holidays, "Saturday"]})
                     break;
+                default:
             }
         }
     }

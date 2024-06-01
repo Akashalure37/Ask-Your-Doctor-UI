@@ -36,7 +36,7 @@ class DoctorDashboard extends Component {
 
     render() {
         let doctor = JSON.parse(sessionStorage.getItem("doctor"));
-        let { doctorId, firstName } = this.state;
+        let {firstName} = this.state;
         return (
             <>
                 <div className="container">

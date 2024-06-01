@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import UserLoginAPI from '../service/UserLoginAPI';
-import ReactModuleLoader from 'react-module-loader';
 
 class EmailForForgotPassword extends Component {
     constructor(props) {
@@ -53,7 +52,7 @@ class EmailForForgotPassword extends Component {
     validateEmail() {
         let email = document.getElementById("email1").value;
         let emailRegex = /\S+@\S+\.\S+/;
-        if (emailRegex.test(email) === true || email == '') {
+        if (emailRegex.test(email) === true || email === '') {
             return true;
         }
         else {
@@ -75,7 +74,7 @@ class EmailForForgotPassword extends Component {
                 <h2 className="text-center mt-5 mb-3">Forgot Password?</h2>
                 <form className="container bg-dark pt-2" style={{ width: "30vw" }}>
                     <div className="form-group">
-                        <input type="email" id="email1" className="form-control text-center mt-3" placeholder="Enter Registered Email" id="email1" name="email" value={this.state.email} onChange={this.onChange} onBlur={this.validateEmail} onFocus={this.removeAlert} required /><span id="emailVR" style={{ color: "red" }}></span>
+                        <input type="email" id="email1" className="form-control text-center mt-3" placeholder="Enter Registered Email" name="email" value={this.state.email} onChange={this.onChange} onBlur={this.validateEmail} onFocus={this.removeAlert} required /><span id="emailVR" style={{ color: "red" }}></span>
                     </div>
                     <button className="btn btn-primary my-3 offset-5" onClick={this.submit}>
                         {this.state.loading && (

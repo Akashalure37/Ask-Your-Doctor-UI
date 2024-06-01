@@ -16,7 +16,7 @@ class EnterToken extends Component {
         e.preventDefault();
 
       
-        if(this.state.token==this.props.location.state.token){
+        if(this.state.token === this.props.location.state.token){
             this.props.history.push({
                 pathname : '/reset-password',
                 state:{

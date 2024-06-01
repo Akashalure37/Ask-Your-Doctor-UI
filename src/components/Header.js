@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 export default function Header(props) {
     
     let { title } = props;
-    let loggedIn = JSON.parse(sessionStorage.getItem("loginState"));
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">

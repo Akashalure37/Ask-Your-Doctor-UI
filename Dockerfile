@@ -1,17 +1,20 @@
-FROM node:16.10.0-alpine3.14
+# pull official base image
+FROM node:13.12.0-alpine
 
-RUN addgroup app && adduser -S -G app app
-
-USER app
-
+# set working directory
 WORKDIR /app
 
-COPY --chown=app:node package*.json ./
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts@3.4.1 -g --silent
 
-COPY --chown=app:node . .
-
+# add app
+COPY . ./
 EXPOSE 3000
-
-CMD [“npm”, “start”]
+# start app
+CMD ["npm", "start"]

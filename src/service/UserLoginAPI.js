@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const USER_LOGIN_BASE_URL = 'http://43.205.114.226:8080/home';
+const USER_LOGIN_BASE_URL ='http://localhost:8080/patient';
 
 class UserLoginAPI {
 

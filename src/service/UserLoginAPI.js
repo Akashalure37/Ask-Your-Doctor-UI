@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const USER_LOGIN_BASE_URL ='http://localhost:8080/patient';
+const USER_LOGIN_BASE_URL ='https://ask-your-doctor.onrender.com';
 
 class UserLoginAPI {
 

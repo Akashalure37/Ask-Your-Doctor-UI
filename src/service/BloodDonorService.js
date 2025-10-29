@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BLOOD_DONOR_BASE_URL = 'http://localhost:8080/blood_donation';
+const BLOOD_DONOR_BASE_URL = 'https://ask-your-doctor.onrender.com/blood_donation';
 
 class BloodDonorService {
     getAllBloodDonorsByCityAndBloodGroup(city,bloodGroup){

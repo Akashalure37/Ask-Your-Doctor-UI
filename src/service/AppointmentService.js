@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const APPOINTMENT_BASE_URL = 'http://localhost:8080/appointment';
+const APPOINTMENT_BASE_URL = 'https://ask-your-doctor.onrender.com/appointment';
 
 class AppointmentServiceMethods {
 

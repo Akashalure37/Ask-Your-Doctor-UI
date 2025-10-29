@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DOCTOR_BASE_URL = 'http://localhost:8080/doctor';
+const DOCTOR_BASE_URL = 'https://ask-your-doctor.onrender.com/doctor';
 
 class DoctorServiceMethods {
 
